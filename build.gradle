@@ -1,3 +1,21 @@
 task wrapper(type: Wrapper) {
     gradleVersion = '2.14.1'
 }
+
+subprojects {
+    apply plugin: 'java'
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/impl/java'
+            }
+        }
+
+        api {
+            java {
+                srcDir 'src/api/java'
+            }
+        }
+    }
+}
