@@ -22,4 +22,17 @@ subprojects {
             }
         }
     }
+
+    configurations {
+        api
+    }
+
+    task apiJar(type: Jar) {
+        baseName "${project.name}-api"
+        from sourceSets.api.output
+    }
+
+    artifacts {
+        api apiJar
+    }
 }
