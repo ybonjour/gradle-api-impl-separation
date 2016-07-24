@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gradle Example Api_Impl separation.iml" filepath="$PROJECT_DIR$/.idea/modules/Gradle Example Api_Impl separation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/moduleA.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/moduleA.iml" group="moduleA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/moduleA_api.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/moduleA_api.iml" group="moduleA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/moduleA_main.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/moduleA_main.iml" group="moduleA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleA/moduleA_test.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleA/moduleA_test.iml" group="moduleA" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/moduleB.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/moduleB.iml" group="moduleB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/moduleB_api.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/moduleB_api.iml" group="moduleB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/moduleB_main.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/moduleB_main.iml" group="moduleB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/moduleB/moduleB_test.iml" filepath="$PROJECT_DIR$/.idea/modules/moduleB/moduleB_test.iml" group="moduleB" />
+    </modules>
+  </component>
+</project>

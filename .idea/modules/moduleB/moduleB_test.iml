@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":moduleB:test" external.linked.project.path="$MODULE_DIR$/../../../moduleB" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="Gradle Example Api/Impl separation" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+    <output-test url="file://$MODULE_DIR$/../../../moduleB/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../moduleB/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../moduleB/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../moduleB/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="moduleB_main" />
+    <orderEntry type="module" module-name="moduleB_api" />
+    <orderEntry type="module" module-name="moduleA_api" />
+  </component>
+  <component name="TestModuleProperties" production-module="moduleB_main" />
+</module>
