@@ -1,0 +1,4 @@
+rootProject.name = 'Gradle Example Api/Impl separation'
+
+include 'moduleA'
+include 'moduleB'
