@@ -48,7 +48,7 @@ artifacts {
 }
 ```
 
-By default a implementation/main configuration always has a dependency to it's api configuration.
+By default the implementation/main configuration of a module always has a dependency to it's api configuration.
 ```
 dependencies {
     compile project(path: ":${project.name}", configuration: "api")
