@@ -35,4 +35,8 @@ subprojects {
     artifacts {
         api apiJar
     }
+
+    dependencies {
+        compile project(path: ":${project.name}", configuration: "api")
+    }
 }
