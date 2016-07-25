@@ -13,29 +13,22 @@ Per module there are two source sets defined:
 sourceSets {
     main {
         java {
-            srcDir 'src/impl/java'
+            srcDirs = ['src/impl/java']
         }
 
         resources {
-            srcDir 'src/impl/resources'
+            srcDir = ['src/impl/resources']
         }
     }
 
-    api {
-        java {
-            srcDir 'src/api/java'
-        }
-    }
+    api
 }
 ```
 
-For each source there is a corresponding configuration with a JAR artifact only containing the compiled sources from the source set.
+For each source there is a corresponding configuration that has a JAR artifact only containing the compiled sources from the source set.
 This means that for each module a `module-api.jar` contianing only the API classes and a `module.jar` containing only the implementation classes is created.
 
 ```
-configurations {
-    api
-}
 
 task apiJar(type: Jar) {
     baseName "${project.name}-api"
@@ -43,20 +36,20 @@ task apiJar(type: Jar) {
 }
 
 artifacts {
-    api apiJar
+    apiCompile apiJar
 }
 ```
 
 By default the implementation/main configuration of a module always has a dependency to it's api configuration.
 ```
 dependencies {
-    compile project(path: ":${project.name}", configuration: "api")
+    compile project(path: ":${project.name}", configuration: "apiCompile")
 }
 ```
 
 A dependency from `moduleA` to `moduleB`s API can then be defined as follows:
 ```
 dependencies {
-    compile project(path: ":moduleA", configuration: "api")
+    compile project(path: ":moduleA", configuration: "apiCompile")
 }
 ```
