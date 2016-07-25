@@ -3,7 +3,7 @@ One approach to enforce clear interfaces between different modules, is to separa
 For example: 
 If `moudleB` depends on `moudleA`, then `moduleB` is only allowed to reference classes in the API part of `moduleA`.
 
-This repository demonstrates a gradle multiproject build configuration that achieves this separation using [source sets](https://docs.gradle.org/2.14.1/dsl/org.gradle.api.tasks.SourceSet.html) and [https://docs.gradle.org/2.14.1/dsl/org.gradle.api.Project.html#org.gradle.api.Project:configurations(groovy.lang.Closure)](dependency configurations).
+This repository demonstrates a gradle multiproject build configuration that achieves this separation using [source sets](https://docs.gradle.org/2.14.1/dsl/org.gradle.api.tasks.SourceSet.html) and [dependency configurations](https://docs.gradle.org/2.14.1/dsl/org.gradle.api.Project.html#org.gradle.api.Project:configurations(groovy.lang.Closure)).
 
 Per module there are two source sets defined:
 - main: This source set contains the implementation classes (it points to src/impl/java)
