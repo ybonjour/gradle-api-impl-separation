@@ -16,11 +16,7 @@ subprojects {
             }
         }
 
-        api {
-            java {
-                srcDir 'src/api/java'
-            }
-        }
+        api
     }
 
     configurations {
