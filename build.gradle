@@ -8,11 +8,11 @@ subprojects {
     sourceSets {
         main {
             java {
-                srcDir 'src/impl/java'
+                srcDirs = ['src/impl/java']
             }
 
             resources {
-                srcDir 'src/impl/resources'
+                srcDirs = ['src/impl/resources']
             }
         }
 
