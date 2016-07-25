@@ -19,20 +19,16 @@ subprojects {
         api
     }
 
-    configurations {
-        api
-    }
-
     task apiJar(type: Jar) {
         baseName "${project.name}-api"
         from sourceSets.api.output
     }
 
     artifacts {
-        api apiJar
+        apiCompile apiJar
     }
 
     dependencies {
-        compile project(path: ":${project.name}", configuration: "api")
+        compile project(path: ":${project.name}", configuration: "apiCompile")
     }
 }
