@@ -1,4 +1,4 @@
-rootProject.name = 'Gradle Example Api/Impl separation'
+rootProject.name = 'gradle-api-impl-separation'
 
 include 'moduleA'
 include 'moduleB'
